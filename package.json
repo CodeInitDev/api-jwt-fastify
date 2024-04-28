@@ -1,0 +1,30 @@
+{
+  "name": "api-completa-fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "prisma": {
+    "seed": "node ./prisma/seed/index.js"
+  },
+  "scripts": {
+    "dev": "node --env-file=./.env --watch ./src/server.js | pino-pretty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^3.0.0",
+    "@prisma/client": "5.11.0",
+    "argon2": "^0.40.1",
+    "fastify": "^4.26.2",
+    "glob": "^10.3.10",
+    "jsonwebtoken": "^9.0.2",
+    "pino": "^8.20.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.0.0",
+    "prisma": "^5.11.0"
+  }
+}
